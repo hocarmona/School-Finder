@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  API-MVVM
-//
-//  Created by Hector Carmona on 8/2/22.
-//
 
 import UIKit
 
@@ -31,6 +25,14 @@ class ViewController: UIViewController, UITableViewDelegate {
             }
         }
     }
+    
+    @IBAction func filterButtonPressed(_ sender: UIButton) {
+        viewModelList.dataArray = viewModelList.dataArray.filter {$0.borough == "MANHATTAN"}
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
     
 }
 
