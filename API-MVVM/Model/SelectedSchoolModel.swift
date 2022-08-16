@@ -1,9 +1,3 @@
-//
-//  SelectedSchoolModel.swift
-//  API-MVVM
-//
-//  Created by Hector Carmona on 8/15/22.
-//
 
 import Foundation
 

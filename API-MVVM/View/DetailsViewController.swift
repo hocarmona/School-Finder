@@ -1,9 +1,3 @@
-//
-//  DetailsViewController.swift
-//  API-MVVM
-//
-//  Created by Hector Carmona on 8/12/22.
-//
 
 import UIKit
 
@@ -23,8 +17,16 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        navigationItem.title = schoolName ?? "No School Found"
-
+        
+        let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
+        tableView.tableHeaderView = header
+        let label = UILabel(frame: header.bounds)
+        label.text = schoolName
+        label.numberOfLines = 0
+        header.backgroundColor = .blue
+        label.textColor = .white
+        label.textAlignment = .center
+        header.addSubview(label)
 
     }
     

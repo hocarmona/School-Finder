@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  API-MVVM
-//
-//  Created by Hector Carmona on 8/2/22.
-//
 
 import UIKit
 

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--School Finder-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="API_MVVM" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,7 +74,7 @@
                             <constraint firstItem="wd3-yZ-1f2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qPw-As-BNO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0dG-Q3-3l2">
+                    <navigationItem key="navigationItem" title="School Finder" id="0dG-Q3-3l2">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="a0j-mB-hHg">
                             <connections>
                                 <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" id="bCK-W4-1Yy"/>
@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="61.607142857142854"/>
         </scene>
-        <!--Details View Controller-->
+        <!--School Details-->
         <scene sceneID="tVI-s1-NkQ">
             <objects>
                 <viewController id="B8K-lq-Piz" customClass="DetailsViewController" customModule="API_MVVM" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,21 +103,21 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="p4e-wc-T8O" detailTextLabel="G9d-lv-3iB" style="IBUITableViewCellStyleSubtitle" id="23C-oK-GpH">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="82.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="23C-oK-GpH" id="Zu0-hD-WJ8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="82.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p4e-wc-T8O">
-                                                    <rect key="frame" x="20" y="-4" width="46.5" height="30"/>
+                                                    <rect key="frame" x="20" y="13.5" width="46.5" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G9d-lv-3iB">
-                                                    <rect key="frame" x="20" y="26" width="62" height="21.5"/>
+                                                    <rect key="frame" x="20" y="46" width="62" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
@@ -138,7 +138,7 @@
                             <constraint firstItem="oSh-su-oBc" firstAttribute="bottom" secondItem="AZm-Kn-2sX" secondAttribute="bottom" id="xnz-gm-3T9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="acf-F3-icJ"/>
+                    <navigationItem key="navigationItem" title="School Details" id="acf-F3-icJ"/>
                     <connections>
                         <outlet property="tableView" destination="AZm-Kn-2sX" id="O0G-jp-Fzm"/>
                     </connections>
@@ -156,7 +156,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
