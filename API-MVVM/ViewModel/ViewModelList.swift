@@ -18,7 +18,6 @@ class ViewModelList {
             refresData()
         }
     }
-    
 
     
     func retrieveDataList() {
